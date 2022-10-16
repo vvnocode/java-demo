@@ -1,0 +1,19 @@
+{
+  "consumer": {
+    "init": {
+      "bootstrap.servers": "192.168.0.15:9092,192.168.0.15:9093",
+      "group.id": "kafka_dev",
+      "enable.auto.commit": "false",
+      "auto.commit.interval.ms": "1000",
+      "session.timeout.ms": "30000",
+      "max.poll.records": "100",
+      "auto.offset.reset": "latest",
+      "key.deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+      "value.deserializer": "org.apache.kafka.common.serialization.StringDeserializer"
+    },
+    "topic": {
+      "topic1": "topic001"
+    },
+    "thread": 2
+  }
+}

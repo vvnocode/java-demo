@@ -1,0 +1,12 @@
+{
+  "producer": {
+    "init": {
+      "bootstrap.servers": "192.168.0.15:9092,192.168.0.15:9093",
+      "acks": "all",
+      "retries": 0,
+      "batch.size": 16384,
+      "key.serializer": "org.apache.kafka.common.serialization.StringSerializer",
+      "value.serializer": "org.apache.kafka.common.serialization.StringSerializer"
+    }
+  }
+}
